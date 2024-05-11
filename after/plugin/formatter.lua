@@ -1,0 +1,72 @@
+-- require("formatter").setup({
+-- 	filetype = {
+-- 		python = {
+-- 			-- python formatter
+-- 			function()
+-- 				print("")
+-- 				return {
+-- 					exe = "autopep8",
+-- 					args = { "-" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 		rust = {
+-- 			-- rust formatter
+-- 			function()
+-- 				return {
+-- 					exe = "cargo",
+-- 					args = { "fmt" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 		c = {
+-- 			-- C formatter
+-- 			function()
+-- 				return {
+-- 					exe = "clang-format",
+-- 					args = { "-" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 		json = {
+-- 			-- C formatter
+-- 			function()
+-- 				return {
+-- 					exe = "clang-format",
+-- 					args = { "-" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 		h = {
+-- 			-- C formatter
+-- 			function()
+-- 				return {
+-- 					exe = "clang-format",
+-- 					args = { "-" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 		lua = {
+-- 			-- Lua formatter
+-- 			function()
+-- 				return {
+-- 					exe = "stylua",
+-- 					args = { "%" },
+-- 					stdin = true,
+-- 				}
+-- 			end,
+-- 		},
+-- 	},
+-- })
+--
+--
+--
+--
+--
+-- -- Setup autocmd in Lua
+vim.cmd("autocmd BufWritePre * lua vim.lsp.buf.format()")

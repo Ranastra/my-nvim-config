@@ -1,0 +1,5 @@
+--print("hello from here")
+require("ranastra.remap")
+require("ranastra.colorscheme")
+require("ranastra.set")
+require("ranastra.neovim-ampy.neovim-ampy")
