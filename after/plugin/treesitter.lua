@@ -46,7 +46,7 @@
 
 require 'nvim-treesitter.configs'.setup {
 	highlight = { enable = true, },
-	ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "rust", "python", "cpp", "php", "html", "css", "javascript", "typescript", "ocaml", "bash" },
 	auto_install = true,
+    ignore_install = { "html" },
 	indent = { enable = true, },
 }

@@ -144,6 +144,7 @@
 -- })
 -- require 'lspconfig'.phpactor.setup {}
 --
+
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -158,7 +159,5 @@ require("mason-lspconfig").setup({
 
 -- here you can setup the language servers
 require('lspconfig').intelephense.setup({})
--- require('lspconfig').pylsp.setup({})
 require('lspconfig').pyright.setup({})
--- require('lspconfig').html.setup({})
-require('lspconfig').sqlls.setup({})
+require('lspconfig').html.setup({})
