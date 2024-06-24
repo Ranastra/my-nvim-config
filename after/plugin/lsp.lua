@@ -161,3 +161,5 @@ require("mason-lspconfig").setup({
 require('lspconfig').intelephense.setup({})
 require('lspconfig').pyright.setup({})
 require('lspconfig').html.setup({})
+require('lspconfig').clangd.setup({})
+-- require('lspconfig').autopep8.setup({})

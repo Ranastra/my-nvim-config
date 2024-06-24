@@ -70,3 +70,4 @@
 --
 -- -- Setup autocmd in Lua
 vim.cmd("autocmd BufWritePre * lua vim.lsp.buf.format()")
+vim.cmd("autocmd BufWritePost *.py silent! execute ':Black'") -- this needed python-neovim and python-black packages
